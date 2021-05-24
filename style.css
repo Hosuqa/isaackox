@@ -1,0 +1,10 @@
+.btn-xl {
+    padding: 15px 25px;
+    font-size: 22px;
+    border-radius: 13px;
+    background-color: #5a442ece;
+}
+
+.tooltip-inner {
+    background: #5a442ece;
+  }

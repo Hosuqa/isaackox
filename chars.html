@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="char.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+    <title>Isaac kox</title>
+    <script> $(function () {
+            $('body').hide().fadeIn(1000);
+            $('#cam').delay(700);
+            $('#cam').hide().fadeIn(1000);
+            $('#kam').delay(1100);
+            $('#kam').hide().fadeIn(1200);
+        });</script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:#5a442ece;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" width="30" height="24" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="tips.html">Porady</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chars.html">Postacie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="boss.html">Bossy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="floors.html">Karty</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <h1 class="text-center display-2" id="cam">Postacie</h1>
+    <br>
+    <div class="container-fluid" id="kam">
+        <div class="row justify-content-md-center">
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-header" style="background-color: #5a442ece;">
+                        <input id="szukaj" type="text" placeholder="Wyszukiwarka">
+                        <a style="color: white;">Kliknij na imiona aby dowiedzieć się więcej</a>
+                        <button style="float: right;" class="btn-dark" onclick="zamykacz()">Zamknij dodatkowe okna</button>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Nazwa</th>
+                                    <th>Serca</th>
+                                    <th>Atak</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabela">
+                                <tr>
+                                    <td onclick="isaac()">Isaac<br><img src="img/isaac1.png"></td>
+                                    <td><img src="img/serce.png"><img src="img/serce.png"><img src="img/serce.png"></td>
+                                    <td>3.50</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="magdalene()">Magdalene<br><img src="img/magdalene.png"></td>
+                                    <td><img src="img/serce.png"><img src="img/serce.png"><img src="img/serce.png"><img src="img/serce.png"></td>
+                                    <td>3.50</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="cain()">Cain<br><img src="img/cain.png"></td>
+                                    <td><img src="img/serce.png"><img src="img/serce.png"></td>
+                                    <td>4.20</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="judas()">Judas<br><img src="img/judas.png"></td>
+                                    <td><img src="img/serce.png"></td>
+                                    <td>4.725</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="eve()">Eve<br><img src="img/eve.png"></td>
+                                    <td><img src="img/serce.png"><img src="img/serce.png"></td>
+                                    <td>2.625</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="samson()">Samson<br><img src="img/samson.png"></td>
+                                    <td><img src="img/serce.png"><img src="img/serce.png"><img src="img/serce.png"></td>
+                                    <td>3.50</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="azazel()">Azazel<br><img src="img/azazel.png"></td>
+                                    <td><img src="img/sercecz.png" height="28px" width="26px"><img src="img/sercecz.png" height="28px" width="26px"><img src="img/sercecz.png" height="28px" width="26px"></td>
+                                    <td>5.25</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="lazarus()">Lazarus<br><img src="img/lazarus.png"></td>
+                                    <td><img src="img/serce.png"><img src="img/serce.png"><img src="img/serce.png"></td>
+                                    <td>3.50</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="eden()">Eden<br><img src="img/eden.png"></td>
+                                    <td><img src="img/serce.png"><img src="img/serce.png"><img src="img/serce.png"></td>
+                                    <td>3.50</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="bluebaby()">Bluebaby<br><img src="img/bluebaby.png"></td>
+                                    <td><img src="img/sercen.png"><img src="img/sercen.png"><img src="img/sercen.png"></td>
+                                    <td>3.50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card mycard" style="display: none!important;" id="isaac">
+                    <div class="card-header" style="background-color: #5a442ece; color: white;">
+                        <div class="d-flex justify-content-between">
+                            <img src="img/isaac1.png"><h4>Isaac</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    Pierwsza postać którą jesteśmy w stanie zagrać. Po pokonaniu bossa w katedrze za pomocą bluebaby odblokowywujemy kostkę d6 jako spacabar item dla isaaca. Pozwala ona na reroll przedmiotu na piedestale.
+                    </div>
+                </div>
+                <div class="card mycard" style="display: none!important;" id="magdalene">
+                    <div class="card-header" style="background-color: #5a442ece; color: white;">
+                        <div class="d-flex justify-content-between">
+                            <img src="img/magdalene.png"><h4>Magdalene</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    Odblokowywujemy ją zdobywając przynajmniej 7 czerwonych serc w runie. Jest trochę wolniejsza od reszty, lecz posiada yum hearta czyli spacebar regenerujący nam czerwone serduszka.
+                    </div>
+                </div>
+                <div class="card mycard" style="display: none!important;" id="cain">
+                    <div class="card-header" style="background-color: #5a442ece; color: white;">
+                        <div class="d-flex justify-content-between">
+                            <img src="img/cain.png"><h4>Cain</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    Odblokowywujemy go po zdobyciu 55 monet w runie. Posiada lucky foot czyli przedmiot zwiększający szczęście i sprawiający że dostajemy tylko dobre pillsy. Ma zmniejszony range względem innych postaci.
+                    </div>
+                </div>
+                <div class="card mycard" style="display: none!important;" id="judas">
+                    <div class="card-header" style="background-color: #5a442ece; color: white;">
+                        <div class="d-flex justify-content-between">
+                            <img src="img/judas.png"><h4>Judas</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    Odblokowywujemy go zabijając szatana. Posiada Book of Belial czyli spacebar zwiększający nasze obrażenia w danym pokoju.
+                    </div>
+                </div>
+                <div class="card mycard" style="display: none!important;" id="eve">
+                    <div class="card-header" style="background-color: #5a442ece; color: white;">
+                        <div class="d-flex justify-content-between">
+                            <img src="img/eve.png"><h4>Eve</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    Odblokowywujemy ją nie podnosząc żadnych serc przez całe dwa piętra. Posiada Whore of Babylon który podnosi nasze obrażenia o 1,5 jeżeli mamy mniej niż jedno serce i dead birda który atakuje przeciwników (pojawia się gdy dostaniemy obrażenia)
+                    </div>
+                </div>
+                <div class="card mycard" style="display: none!important;" id="samson">
+                    <div class="card-header" style="background-color: #5a442ece; color: white;">
+                        <div class="d-flex justify-content-between">
+                            <img src="img/samson.png"><h4>Samson</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    Odblokowywujemy go nie otrzymując obrażeń przez 2 piętra. Posiada przedmiot Bloody Lust zwiększający nasz atak po otrzymaniu obrażeń. Efekt nakłada się wielokrotnie i działa do momentu przejścia  na następne piętro.
+                    </div>
+                </div>
+                <div class="card mycard" style="display: none!important;" id="azazel">
+                    <div class="card-header" style="background-color: #5a442ece; color: white;">
+                        <div class="d-flex justify-content-between">
+                            <img src="img/azazel.png"><h4>Azazel</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    Odblokowywujemy go gdy zawrzemy 3 pakty z diabłem w jednej grze. Posiada zdolność latania i krótkozasięgowy brimstone. Jest OP 
+                    </div>
+                </div>
+                <div class="card mycard" style="display: none!important;" id="lazarus">
+                    <div class="card-header" style="background-color: #5a442ece; color: white;">
+                        <div class="d-flex justify-content-between">
+                            <img src="img/lazarus.png"><h4>Lazarus</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    Odblokowywujemy go posiadając 4 niebieskie serca. Jeżeli zginiemy grając Lazarusem odradzamy się z jednym czerwonym sercem i zwiększonym przelicznikiem na obrażenia o 0.2
+                    </div>
+                </div>
+                <div class="card mycard" style="display: none!important;" id="eden">
+                    <div class="card-header" style="background-color: #5a442ece; color: white;">
+                        <div class="d-flex justify-content-between">
+                            <img src="img/eden.png"><h4>Eden</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    Aby zagrać Edenem należy pokonać serce mamy. Dostajemy wtedy token umożliwiający grę tą postacią. Posiada losowe statystyki i dwa losowe itemy. Jeden spacebar i jeden zwykły.
+                    </div>
+                </div>
+                <div class="card mycard" style="display: none!important;" id="bluebaby">
+                    <div class="card-header" style="background-color: #5a442ece; color: white;">
+                        <div class="d-flex justify-content-between">
+                            <img src="img/bluebaby.png"><h4>Bluebaby</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    Odblokowywujemy go zabijając serce mamy 10x. Nie może mieć czerwonych serc i posiada spacebar item The Poop stawiający kupę.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#szukaj").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#tabela tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <footer class="d-flex justify-content-center fixed-bottom">© 2021 S&S Praktyka</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous">
+    </script>
+    </body>
+    
+    </html>
